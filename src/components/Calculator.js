@@ -6,7 +6,7 @@ import Screen from "./Screen";
 const Calculator = () => {
 
   // Tracking allowable operators  (since we're using evaluate, it seems wise to limit this by code, not by UI)
-  const operators = ['+', '-', '/', 'x'];
+  const operators = ['+', '-', '/', '*'];
 
   // Track calculator state
   const [num1, setNum1] = useState('');
@@ -16,15 +16,15 @@ const Calculator = () => {
 
  // Number button clicks
   const handleNumberClick = (e) => {
-    // TO DO:  get this a better way - maybe with children?
+    // TO DO:  get this a better way 
     const button = e.target.innerHTML;
     // If there's a valid arithmetic operator, we're entering num2, otherwise we're entering num1
     if (operators.includes(operator)) {
-      // TO DO:  refactor
+      // TO DO:  refactor  (cleaner method, handle leading zeroes)
       setNum2( num2 + button);
       setDisplay(num2 + button);
     } else {
-      // TO DO:  refactor
+      // TO DO:  refactor  (cleaner method, handle leading zeroes)
       setNum1(num1 + button);
       setDisplay(num1 + button);
     }
@@ -34,7 +34,8 @@ const Calculator = () => {
  // Operator button clicks
   const handleOperationClick = (e) => {
     // TO DO:  get this in a better way
-    const button = e.target.innerHTML;
+    // Convert button label 'x' to operator '*'
+    const button = ( e.target.innerHTML === 'x' ? '*' : e.target.innerHTML );
     // If this is one of the arithmetic operators, add it to state.  If it's an action, process it.
     if (operators.includes(button)) {
       setOperator(button);
@@ -43,9 +44,9 @@ const Calculator = () => {
       setNum2('');
       setOperator('');
       setDisplay('');
-    } else if (button==='='){
+    } else if (button==='=' && num1 && operator && num2){   // Don't evaluate unless all have been entered
       // eslint-disable-next-line no-eval
-      setDisplay(eval(num1 + operator + num2));
+      setDisplay(eval(parseInt(num1) + operator + parseInt(num2)));
     }
 
   };
