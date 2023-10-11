@@ -1,5 +1,4 @@
-const Operation = ({ value }) => {
-  /** TODO: What happens when a user clicks an Operation, what do we want to pass to our parent? */
+const Operation = ({ value, onClick }) => {
   return (
     <div
       style={{
@@ -7,6 +6,7 @@ const Operation = ({ value }) => {
         border: "1px solid black",
         width: 60,
       }}
+      onClick={onClick}
     >
       {value}
     </div>
