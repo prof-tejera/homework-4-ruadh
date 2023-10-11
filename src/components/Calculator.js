@@ -52,17 +52,10 @@ const Calculator = () => {
   };
 
   return (
-    <div>
-      <div>
-        <div><strong>Num1: </strong>{num1}</div>
-        <div><strong>Operator: </strong>{operator}</div>
-        <div><strong>Num2: </strong>{num2}</div>
-        <div><strong>Display: </strong>{display}</div>
-      </div>
+    <div class="container">
       <Screen value={display} />
       <div style={{ display: "flex" }}>
-        <div>
-          <Number value={0} onClick={handleNumberClick} />
+        <div class="keypad">
           <Number value={1} onClick={handleNumberClick} />
           <Number value={2} onClick={handleNumberClick} />
           <Number value={3} onClick={handleNumberClick} />
@@ -72,14 +65,15 @@ const Calculator = () => {
           <Number value={7} onClick={handleNumberClick} />
           <Number value={8} onClick={handleNumberClick} />
           <Number value={9} onClick={handleNumberClick} />
+          <Number value={0} onClick={handleNumberClick} />
+          <Operation value="=" classes="action-key" onClick={handleOperationClick} />
+          <Operation value="clear" classes="action-key" onClick={handleOperationClick} />
         </div>
         <div style={{ paddingLeft: 10 }}>
-          <Operation value="+" onClick={handleOperationClick} />
-          <Operation value="/" onClick={handleOperationClick} />
-          <Operation value="x" onClick={handleOperationClick} />
-          <Operation value="-" onClick={handleOperationClick} />
-          <Operation value="=" onClick={handleOperationClick} />
-          <Operation value="clear" onClick={handleOperationClick} />
+          <Operation value="+" classes="operator-key" onClick={handleOperationClick} />
+          <Operation value="/" classes="operator-key" onClick={handleOperationClick} />
+          <Operation value="x" classes="operator-key" onClick={handleOperationClick} />
+          <Operation value="-" classes="operator-key" onClick={handleOperationClick} />
         </div>
       </div>
     </div>

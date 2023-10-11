@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.keypad {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.number-key {
+  background-color: aliceblue;
+  color: navy;
+}
+
+.operator-key {
+  background-color: navy;
+  color: white;
+}
+
+.action-key {
+  background-color: mediumblue;
+  color: white;
+}
