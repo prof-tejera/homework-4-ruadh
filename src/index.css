@@ -43,7 +43,8 @@ code {
 }
 
 .number-key {
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
+  background-color: lightskyblue;
   color: navy;
 }
 
@@ -53,6 +54,6 @@ code {
 }
 
 .action-key {
-  background-color: mediumblue;
+  background-color: blue;
   color: white;
 }
