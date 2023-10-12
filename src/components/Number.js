@@ -2,12 +2,7 @@ const Number = ({ value, onClick }) => {
 
   return (
     <div
-      style={{
-        padding: 10,
-        border: "1px solid black",
-        width: 60,
-        
-      }}
+      // Moved styling to index.css
       className = {"key number-key"}
       onClick= {onClick}
     >

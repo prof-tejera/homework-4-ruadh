@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-.container {
+.calculator {
   background-color: navy;
   border-radius: 3%;
   padding: 3rem;
@@ -21,6 +21,9 @@ code {
 .key {
   font-size: x-large;
   text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  width: 80px;
 }
 
 .screen {
@@ -43,7 +46,6 @@ code {
 }
 
 .number-key {
-  /* background-color: aliceblue; */
   background-color: lightskyblue;
   color: navy;
 }
