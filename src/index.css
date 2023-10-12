@@ -59,3 +59,7 @@ code {
   background-color: blue;
   color: white;
 }
+
+.active-operator{
+  box-shadow: 0px 0px 0px 2px royalblue inset;
+}
