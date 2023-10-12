@@ -1,6 +1,6 @@
 import Calculator from "./components/Calculator";
 
-function App() {
+function App( ) {
 
   return (
     <div
@@ -12,6 +12,7 @@ function App() {
         minHeight: "100vh",
       }}
     >
+
       <Calculator />
     </div>
   );
