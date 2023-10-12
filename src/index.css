@@ -11,3 +11,55 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.calculator {
+  background-color: navy;
+  border-radius: 3%;
+  padding: 3rem;
+}
+
+.key {
+  font-size: x-large;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  width: 80px;
+}
+
+.screen {
+  background-color: white;
+  color: navy;
+  border: 1px solid navy;
+  height: 70px;
+  line-height: 70px;
+  text-align: right;
+  font-size: xx-large;
+  margin-bottom: 10px;
+  padding-right: 1.5rem;
+  border-radius: 0.2rem;
+
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.number-key {
+  background-color: lightskyblue;
+  color: navy;
+}
+
+.operator-key {
+  background-color: mediumblue;
+  color: white;
+}
+
+.action-key {
+  background-color: blue;
+  color: white;
+}
+
+.active-operator{
+  box-shadow: 0px 0px 0px 2px royalblue inset;
+}
