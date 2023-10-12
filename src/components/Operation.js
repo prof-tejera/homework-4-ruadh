@@ -6,7 +6,7 @@ const Operation = ({ value, onClick, classes }) => {
         border: "1px solid black",
         width: 60,
       }}
-      className={classes}
+      className={`key ${classes}`}
       onClick={onClick}
     >
       {value}

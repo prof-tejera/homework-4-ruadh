@@ -53,7 +53,7 @@ const Calculator = () => {
 
   return (
     <div class="container">
-      <Screen value={display} />
+      <Screen classes="display" value={display} />
       <div style={{ display: "flex" }}>
         <div class="keypad">
           <Number value={1} onClick={handleNumberClick} />

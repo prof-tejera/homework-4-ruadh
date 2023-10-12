@@ -12,6 +12,31 @@ code {
     monospace;
 }
 
+.container {
+  background-color: navy;
+  border-radius: 3%;
+  padding: 3rem;
+}
+
+.key {
+  font-size: x-large;
+  text-align: center;
+}
+
+.screen {
+  background-color: white;
+  color: navy;
+  border: 1px solid navy;
+  height: 70px;
+  line-height: 70px;
+  text-align: right;
+  font-size: xx-large;
+  margin-bottom: 10px;
+  padding-right: 1.5rem;
+  border-radius: 0.2rem;
+
+}
+
 .keypad {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -23,7 +48,7 @@ code {
 }
 
 .operator-key {
-  background-color: navy;
+  background-color: mediumblue;
   color: white;
 }
 

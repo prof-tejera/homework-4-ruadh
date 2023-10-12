@@ -8,7 +8,7 @@ const Number = ({ value, onClick }) => {
         width: 60,
         
       }}
-      className = {"number-key"}
+      className = {"key number-key"}
       onClick= {onClick}
     >
       {value}
